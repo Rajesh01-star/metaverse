@@ -1,9 +1,11 @@
-"use client";
+/* eslint-disable jsx-a11y/anchor-is-valid */
 
-import { motion } from "framer-motion";
-import styles from "../styles";
-import { slideIn, staggerContainer, textVariant } from "../utils/motion";
-import smooth from "./smooth";
+'use client';
+
+import { motion } from 'framer-motion';
+import styles from '../styles';
+import { slideIn, staggerContainer, textVariant } from '../utils/motion';
+import smooth from './smooth';
 
 const Hero = () => (
   <section className={`${styles.yPaddings} pl-6 sm:pl-16`}>
@@ -29,7 +31,7 @@ const Hero = () => (
       </div>
 
       <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
+        variants={slideIn('right', 'tween', 0.2, 1)}
         className="relative w-full md:-mt[20px] -mt[12px]"
       >
         <div className="absolute w-full h-[300px] hero-gradient rounded-tl-[140px] z-[0] -top-[30px]" />

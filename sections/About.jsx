@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import { TypingText } from "../components";
-import { fadeIn, staggerContainer, textVariant } from "../utils/motion";
+import { motion } from 'framer-motion';
+import { TypingText } from '../components';
+import { fadeIn, staggerContainer } from '../utils/motion';
 
-import styles from "../styles";
+import styles from '../styles';
 
 const About = () => (
   <section className={`${styles.paddings} relative z-10`}>
@@ -18,7 +18,7 @@ const About = () => (
     >
       <TypingText title="| About Metaversus " textStyles="text-center" />
       <motion.p
-        variants={fadeIn("up", "tween", 0.2, 1)}
+        variants={fadeIn('up', 'tween', 0.2, 1)}
         className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
       >
         <span className="font-extrabold">Metaverse</span> is a new thing in the
@@ -32,7 +32,7 @@ const About = () => (
         of the metaverse by scrolling down
       </motion.p>
       <motion.img
-        variants={fadeIn("up", "tween", 0.3, 1)}
+        variants={fadeIn('up', 'tween', 0.3, 1)}
         src="/arrow-down.svg"
         alt="arrow down"
         className="w-[18px] h-[28px] mt-[28px]"
